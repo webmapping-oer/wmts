@@ -12,5 +12,7 @@
 
 - [Grafik WMTS Kartenkacheln der Verwaltungsgrundkarte Raster Österreich (grau)](material/concept_wmts_wien.png) von [Klaus Förster](https://github.com/webmapping-oer) unter der Lizenz [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/deed.de) via [concept_wmts_wien.html](material/concept_wmts_wien.html) und [concept_wmts_wien.odg](material/concept_wmts_wien.odg)
 
+- [HTML/CSS/Javascript Template WMTS Hintergrundkarten (Österreich)](https://webmapping-oer.github.io/material/template/index.html) von [Klaus Förster](https://github.com/webmapping-oer) unter der Lizenz [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/deed.de) via [template-wmts.zip](https://webmapping-oer.github.io/material/template-wmts.zip)
+
 ---
 [Webmapping OER Kurs](https://github.com/webmapping-oer)

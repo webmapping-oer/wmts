@@ -1,0 +1,49 @@
+/* WMTS Hintergrundkarten (Österreich), Stile */
+
+body {
+    font-family: Verdana, sans-serif;
+}
+
+a {
+    color: black;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+header h2 {
+    margin: 0;
+}
+
+header nav {
+    text-align: right;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding-top: 1em;
+}
+
+article {
+    margin-top: 0.5em;
+}
+
+#map {
+    width: 100%;
+    height: 80vh;
+    border: 1px solid gray;
+}
+
+footer {
+    font-size: 0.9em;
+    margin-top: 0.5em;
+}
+
+footer nav {
+    display: inline-block;
+}
