@@ -28,8 +28,8 @@ Finde alle Layer, die vom basemap.at WMTS-Dienst angeboten werden und trage für
 
     > LibreOffice Mustertabelle GetCapabilities_analyse_template.ods von [Klaus Förster](mailto:klaus.foerster@uibk.ac.at) unter der Lizenz [CC0](https://creativecommons.org/public-domain/cc0/) via [GetCapabilities_analyse_template.ods](https://webmapping-oer.github.io/wmts/material/GetCapabilities_analyse_template.ods)
 
-[!TIP]
-Die meisten Attribute sind leicht zu finden, nur beim maximalen Zoom-Level musst du "*etwas ums Eck denken*", denn der steht nicht direkt in der Layer-Definition sondern muss aus dieser abgeleitet werden ...
+> [!TIP]
+> Die meisten Attribute sind leicht zu finden, nur beim maximalen Zoom-Level musst du "*etwas ums Eck denken*", denn der steht nicht direkt in der Layer-Definition sondern muss aus dieser abgeleitet werden ...
 
 Zeit: 20 Minuten
 
