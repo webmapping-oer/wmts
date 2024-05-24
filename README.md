@@ -193,7 +193,7 @@ Die Layer-Control für die verfügbaren basemap.at Layer erstellst du in zwei Sc
 
 Zeit: 5 Minuten
 
-Die Layer der basemap.at umfassen auch drei Layer, die keine Beschriftung aufweisen: Orthofoto, Gelände und Oberfläche. Sie können mit dem Overlay für Beschriftungen ganz einfach kombiniert werden
+Die Layer der basemap.at umfassen auch drei Layer, die keine Beschriftung aufweisen: Orthofoto, Gelände und Oberfläche. Sie können mit dem Overlay für Beschriftungen ganz einfach kombiniert werden. Versuche es am Beispiel des Orthofotos:
 
 - verwende `L.layerGroup()`(<https://leafletjs.com/reference.html#layergroup>) um das Orthofoto mit dem Overlay zu kombinieren. Du musst nur die beiden `L.tileLayer()` Definitionen als Array übergeben, wobei der zweite Layer, den ersten überlagert. Verwende den niedrigeren Zoom-Level des Orthofotos auch bei der Beschriftung um zu verhindern, dass ab Zoom-Level 18 die Beschriftung alleine übrig bleibt.
 
