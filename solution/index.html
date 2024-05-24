@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>WMTS Hintergrundkarten (basemap.at)</title>
+
+    <!-- Leaflet -->
+    <!-- leaflet.css als link-Element über https://cdnjs.com/libraries/leaflet einbinden -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js" integrity="sha512-BwHfrr4c9kmRkLw6iXFdzcdWV/PGkVgiIyIWLLlTSXzWQzxuSg4DiQUCpauz/EWjgk5TYQqX/kvn9pG1NpYfqg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- leaflet.js als script-Element mit defer-Attribut über https://cdnjs.com/libraries/leaflet einbinden -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" integrity="sha512-Zcn6bjR/8RZbLEpLIeOwNtzREBAJnUKESxces60Mpoj+2okopSAcSUIUOseddDm0cxnGQzxIR7vJgsLZbdLE3w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- eigene Stile -->
+    <link rel="stylesheet" href="main.css" />
+
+    <!-- Hauptscript -->
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h2>WMTS Hintergrundkarten (<a href="https://basemap.at">basemap.at</a>)</h2>
+            <nav>
+                <a href="https://github.com/webmapping-oer">Webmapping OER Kurs</a> |
+                <a href="https://github.com/webmapping-oer/wmts">WMTS-Session</a>
+            </nav>
+        </header>
+        <article>
+            <div id="map"></div>
+        </article>
+        <footer>
+            <strong>Quellen: </strong>
+            <cite><a href="https://webmapping-oer.github.io/wmts/material/template/index.html">HTML/CSS/Javascript Template WMTS Hintergrundkarten (Österreich)</a> von <a href="mailto:klaus.foerster@uibk.ac.at">Klaus Förster</a> unter der Lizenz <a href="https://creativecommons.org/licenses/by/4.0/deed.de">CC-BY 4.0</a> via <a href="https://webmapping-oer.github.io/wmts/material/template-wmts.zip">template-wmts.zip</a>. Kartendaten der <a href="https://www.data.gv.at/katalog/de/dataset/basemap-at">Verwaltungsgrundkarte Raster Österreich</a> von <a href="https://basemap.at/#lizenz">basemap.at</a> unter der Lizenz <a href="https://creativecommons.org/licenses/by/4.0/deed.de">CC-BY 4.0</a>.</cite>
+        </footer>
+    </main>
+</body>
+
+</html>
