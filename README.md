@@ -16,7 +16,7 @@ Als Voraussetzung bei er Implementierung solltest du den **Leaflet Quick Start G
 
 Die folgende Präsentation gibt einen kurzen Überblick, wie man sich Web Map Tile Services (WMTS) vorstellen kann. Beschäftige dich 5 Minuten mit den wenigen Folien und recherchiere eigenständig im Internet, wenn dir etwas nicht klar ist, oder du mehr Informationen möchtest.
 
-- [Download slides.odp](https://webmapping-oer.github.io/wmts/material/slides.odp)
+- [Download slides.odp](./material/slides.odp)
 
     ![CC-BY Icon](./material/cc-by.png)
 
@@ -70,7 +70,7 @@ Damit ist es Zeit, sich der Visualisierung mit Leaflet zuzuwenden. Damit du dich
 
     ![CC-BY Icon](./material/cc-by.png)
 
-    > [HTML/CSS/Javascript Template WMTS Hintergrundkarten (Österreich)](https://webmapping-oer.github.io/wmts/material/template/index.html) von [Klaus Förster](mailto:klaus.foerster@uibk.ac.at) unter der Lizenz [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/deed.de) via [template-wmts.zip](https://webmapping-oer.github.io/wmts/material/template-wmts.zip)
+    > [HTML/CSS/Javascript Template WMTS Hintergrundkarten (basemap.at)](https://webmapping-oer.github.io/wmts/material/template/index.html) von [Klaus Förster](mailto:klaus.foerster@uibk.ac.at) unter der Lizenz [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/deed.de) via [template-wmts.zip](https://webmapping-oer.github.io/wmts/material/template-wmts.zip)
 
 Entpacke es bei dir lokal am Rechner und öffne das Verzeichnis, in dem du es entpackt hast, mit "*Ordner öffnen*" in Visual Studio Code. Damit kannst du mit dem *Live Server Plugin* von Ritwick Dey die Webseite ansehen, als ob sie im Netz wäre. Klicke dazu einfach auf "*Go Live*" im rechten, unteren Eck des Editors.
 
@@ -180,18 +180,47 @@ Die Layer-Control für die verfügbaren basemap.at Layer erstellst du in zwei Sc
         ),
     }).addTo(map);
     ```
-### F. Kosmetik beim Template
 
-Ganz zum Schluss, kannst du noch das Template anpassen, bzw. ergänzen. Ändere beim Titel und der Überschrift den Text *Österreich* in *basemap.at*  und füge im Footer bei Quellen noch ein vollständiges Zitat für die Verwaltungsgrundkarte Raster Österreich hinzu
+### F. Layer gruppieren
+
+Die Layer der basemap.at umfassen auch drei Layer, die keine Beschriftung aufweisen: Orthofoto, Gelände und Oberfläche. Sie können mit dem Overlay für Beschriftungen ganz einfach kombiniert werden
+
+- verwende `L.layerGroup()`(<https://leafletjs.com/reference.html#layergroup>) um das Orthofoto mit dem Overlay zu kombinieren. Du musst nur die beiden `L.tileLayer()` Definitionen als Array übergeben, wobei der zweite Layer, den ersten überlagert. Verwende den niedrigeren Zoom-Level des Orthofotos auch bei der Beschriftung um zu verhindern, dass ab Zoom-Level 18 die Beschriftung alleine übrig bleibt.
+
+- dann musst du die LayerGroup noch mit einem Label an die Layer-Control hängen. Der kompllete Code sieht damit so aus:
+
+    ```javascript
+    L.control.layers({
+        // bestehende tileLayer
+        "Basemap als farbiges Orthofoto beschriftet": L.layerGroup([
+            L.tileLayer(
+                "https://mapsneu.wien.gv.at/basemap/bmaporthofoto30cm/normal/google3857/{z}/{y}/{x}.jpeg", {
+                    attribution: `Datenquelle: <a href="https://basemap.at/#lizenz">basemap.at</a>`,
+                    maxZoom: 17
+                }
+            ),
+            L.tileLayer(
+                "https://mapsneu.wien.gv.at/basemap/bmapoverlay/normal/google3857/{z}/{y}/{x}.png", {
+                    attribution: `Datenquelle: <a href="https://basemap.at/#lizenz">basemap.at</a>`,
+                    maxZoom: 17
+                }
+            )
+        ])
+    }).addTo(map);
+    ```
+
+### G. Quelle der Kartendaten ergänzen
+
+Ganz zum Schluss kannst du noch die Quelle für die Kartendaten der Verwaltungsgrundkarte Raster Österreich im Footer ergänzen
 
 ```html
-<footer>
-    <strong>Quellen: </strong>
-   <cite>Kartendaten der <a href="https://www.data.gv.at/katalog/de/dataset/basemap-at">Verwaltungsgrundkarte Raster Österreich</a> von <a href="https://basemap.at/#lizenz">basemap.at</a> unter der Lizenz <a href="https://creativecommons.org/licenses/by/4.0/deed.de">CC-BY 4.0</a></cite>
+Kartendaten der <a href="https://www.data.gv.at/katalog/de/dataset/basemap-at">Verwaltungsgrundkarte Raster Österreich</a> von <a href="https://basemap.at/#lizenz">basemap.at</a> unter der Lizenz <a href="https://creativecommons.org/licenses/by/4.0/deed.de">CC-BY 4.0</a>.
 </footer>
 ```
 
-### G. Üben, Üben, Üben ...
+Damit ist die Karte fertig. Das Ergebnis kannst du dir auch auf der Kurshomepage unter <https://webmapping-oer.github.io/wmts/solution> ansehen.
+
+### H. Üben, Üben, Üben ...
 
 Als Übung für zu Hause sollst du dich mit zwei weiteren WMTS-Diensten Österreichs beschäftigen: der [eGrundkarte von Tirol](https://www.data.gv.at/katalog/de/dataset/land-tirol_elektronischekartetirol) und dem [Web Map Tile Service der Stadt Wien](https://www.data.gv.at/katalog/de/dataset/stadt-wien_webmaptileservicewmtswien). 
 
@@ -236,7 +265,7 @@ Die Analysetabelle mit allen Einträgen kannst du dir natürlich auch ansehen - 
 
 - [WMTS GetCapabilities XML Datei  für die eGrundkarte Tirol](https://webmapping-oer.github.io/wmts/material/GetCapabilities-tirol.xml) von [Land Tirol](https://data.tirol.gv.at/) unter der Lizenz [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/deed.de) via [data.gv.at](https://www.data.gv.at/katalog/de/dataset/land-tirol_elektronischekartetirol)
 
-- [HTML/CSS/Javascript Template WMTS Hintergrundkarten (Österreich)](https://webmapping-oer.github.io/wmts/material/template/index.html) von [Klaus Förster](mailto:klaus.foerster@uibk.ac.at) unter der Lizenz [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/deed.de) via [template-wmts.zip](https://webmapping-oer.github.io/wmts/material/template-wmts.zip)
+- [HTML/CSS/Javascript Template WMTS Hintergrundkarten (basemap.at)](https://webmapping-oer.github.io/wmts/material/template/index.html) von [Klaus Förster](mailto:klaus.foerster@uibk.ac.at) unter der Lizenz [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/deed.de) via [template-wmts.zip](https://webmapping-oer.github.io/wmts/material/template-wmts.zip)
 
 - LibreOffice Template GetCapabilities_analyse_template.ods von [Klaus Förster](mailto:klaus.foerster@uibk.ac.at) unter der Lizenz [CC0](https://creativecommons.org/public-domain/cc0/) via [GetCapabilities_analyse_template.ods](https://webmapping-oer.github.io/wmts/material/GetCapabilities_analyse_template.ods)
 
