@@ -6,9 +6,8 @@
 
 Willkommen zur Webmapping OER Lern-Session Hintergrundkarten mit Web Map Tile Services (WMTS). Nimm dir einenhalb Stunden Zeit und entdecke am Beispiel der Verwaltungsgrundkarte Österreich, wie du mit einem freien WMTS-Dienst und Leaflet Hintergrundkarten für dein Webmapping Projekt in einer wählbaren Layer-Control implementieren kannst.
 
-Zum Arbeiten benötigst du einen Standard konformen Browser (z.B. Firefox), Visual Studio Code zum Editieren der HTML und Javascript Dateien und LibreOffice für die Aufgabe sowie die Übung im Anschluss an die Einheit. Die komplette Einheit kannst du unter *Releases* als ZIP-Datei downloaden, lokal auf deinem Computer entpacken und in Visual Studio Code über "*Ordner Öffnen*" verfügbar machen. Beim Ansehen der Markdown-Dateien (.md) hilft dir die Tastenkombination `Ctrl + Shift + V` und mit dem Visual Studio Code Plugin *Live Server Plugin von Ritwick Dey* kannst du dir HTML-Seiten wie im Web anzeigen lassen. Klicke dazu einfach auf "*Go Live*" im rechten, unteren Eck des Editors.
-
-Als Voraussetzung bei der Implementierung solltest du den **Leaflet Quick Start Guide** unter <https://leafletjs.com/examples/quick-start/> schon erfolgreich erledigt haben.
+> [!NOTE]
+> Zum Arbeiten benötigst du einen Standard konformen Browser (z.B. Firefox), Visual Studio Code zum Editieren der HTML und Javascript Dateien und LibreOffice für die Aufgabe sowie die Übung im Anschluss an die Einheit. Die komplette Einheit kannst du unter *Releases* als ZIP-Datei downloaden, lokal auf deinem Computer entpacken und in Visual Studio Code über "*Ordner Öffnen*" verfügbar machen. Beim Ansehen der Markdown-Dateien (.md) hilft dir die Tastenkombination `Ctrl + Shift + V` und mit dem Visual Studio Code Plugin *Live Server Plugin von Ritwick Dey* kannst du dir HTML-Seiten wie im Web anzeigen lassen. Klicke dazu einfach auf "*Go Live*" im rechten, unteren Eck des Editors.
 
 ## 1. Kurzeinführung Web Map Tile Services (WMTS)
 
