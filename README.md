@@ -230,6 +230,10 @@ Kartendaten der <a href="https://www.data.gv.at/katalog/de/dataset/basemap-at">V
 
 Damit ist die Karte fertig. Das Ergebnis kannst du dir auch auf der Kurshomepage unter <https://webmapping-oer.github.io/wmts/solution> ansehen.
 
+![CC-BY Icon](./material/cc-by.png)
+
+> [Visualisierung WMTS Hintergrundkarten (basemap.at)](https://webmapping-oer.github.io/wmts/solution/index.html) von [Klaus Förster](mailto:klaus.foerster@uibk.ac.at) unter der Lizenz [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/deed.de).  Kartendaten von [basemap.at](https://basemap.at/#lizenz) unter der Lizenz [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/deed.de) via [data.gv.at](https://www.data.gv.at/katalog/de/dataset/basemap-at). [Kartenbibliothek Leaflet zur Visualisierung](https://leafletjs.com/) von [Volodymyr Agafonkin](https://agafonkin.com/) unter der [BSD 2-Clause Lizenz](https://opensource.org/license/bsd-2-clause) via [cdnjs.com](https://cdnjs.com/libraries/leaflet)
+
 ## 4. Übe das Gelernte am Beispiel von zwei weiteren WMTS-Diensten
 
 Zeit: 90-120 Minuten
@@ -285,7 +289,6 @@ Hier noch die Liste der verwendeten Materialien mit Lizenz-Zitaten.
 - [HTML/CSS/Javascript Template WMTS Hintergrundkarten (basemap.at)](https://webmapping-oer.github.io/wmts/material/template/index.html) von [Klaus Förster](mailto:klaus.foerster@uibk.ac.at) unter der Lizenz [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/deed.de) via [template-wmts.zip](https://webmapping-oer.github.io/wmts/material/template-wmts.zip)
 
 - [Visualisierung WMTS Hintergrundkarten (basemap.at)](https://webmapping-oer.github.io/wmts/solution/index.html) von [Klaus Förster](mailto:klaus.foerster@uibk.ac.at) unter der Lizenz [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/deed.de).  Kartendaten von [basemap.at](https://basemap.at/#lizenz) unter der Lizenz [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/deed.de) via [data.gv.at](https://www.data.gv.at/katalog/de/dataset/basemap-at). [Kartenbibliothek Leaflet zur Visualisierung](https://leafletjs.com/) von [Volodymyr Agafonkin](https://agafonkin.com/) unter der [BSD 2-Clause Lizenz](https://opensource.org/license/bsd-2-clause) via [cdnjs.com](https://cdnjs.com/libraries/leaflet)
-
 
 - [LibreOffice Template GetCapabilities_analyse_template.ods](https://webmapping-oer.github.io/wmts/material/GetCapabilities_analyse_template.ods) von [Klaus Förster](mailto:klaus.foerster@uibk.ac.at) unter der Lizenz [CC0](https://creativecommons.org/public-domain/cc0/)
 
